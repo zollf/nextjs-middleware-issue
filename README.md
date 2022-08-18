@@ -2,9 +2,14 @@
 
 ## Steps to reproduce
 ```
+Delete src/.next # if exists
 APP_VERSION=1 npm run build && npm start
 Open: localhost:3000/test
 Close server
 APP_VERSION=2 npm run build && npm start
 Open: localhost:3000/test
-Errors in network
+```
+
+Console shows: `Error: Failed to load static props`.
+
+There are also failed network requests.

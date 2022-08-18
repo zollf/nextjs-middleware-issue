@@ -1,5 +1,4 @@
 import React from 'react';
-import data from '../../data';
 import { useRouter } from 'next/router';
 
 export default function Slug({ staticDate, appVersion }) {
@@ -23,8 +22,7 @@ export const getStaticProps = async () => {
     revalidate: 600,
     props: {
       staticDate: (new Date()).toString(),
-      appVersion: process.env.APP_VERSION,
-      data,
+      appVersion: process.env.APP_VERSION
     }
   }
 }
