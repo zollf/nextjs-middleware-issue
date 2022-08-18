@@ -5,12 +5,12 @@ Seems to be a issue with build ids and using middleware upon revalidation of sta
 ## Steps to reproduce
 ```
 Delete src/.next # if exists
-APP_VERSION=1 npm run build && npm start
+npm run build && npm start
 Open: localhost:3000/test
 
 Terminate server
 
-APP_VERSION=2 npm run build && npm start
+npm run build && npm start
 Open: localhost:3000/test
 ```
 

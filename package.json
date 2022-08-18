@@ -7,7 +7,8 @@
     "dev": "next dev src",
     "build": "next build src",
     "start": "next start src",
-    "lint": "next lint"
+    "lint": "next lint",
+    "info": "next info"
   },
   "repository": {
     "type": "git",
