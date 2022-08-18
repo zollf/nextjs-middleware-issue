@@ -1,12 +1,14 @@
 import React from 'react';
+import data from '../../data';
 import { useRouter } from 'next/router';
 
-export default function Slug({ staticDate }) {
+export default function Slug({ staticDate, appVersion }) {
   const router = useRouter();
   return (
     <div>
       <h1>Slug: {router.query.slug}</h1>
       <h2>Date generated: {staticDate}</h2>
+      <h2>APP_VERSION: {appVersion}</h2>
     </div>
   );
 }
@@ -20,7 +22,9 @@ export const getStaticProps = async () => {
   return {
     revalidate: 600,
     props: {
-      staticDate: (new Date()).toString()
+      staticDate: (new Date()).toString(),
+      appVersion: process.env.APP_VERSION,
+      data,
     }
   }
 }
