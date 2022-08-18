@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
+const config = {
   cleanDistDir: false,
+  reactStrictMode: true,
 }
 
-module.exports = nextConfig;
+module.exports = config;

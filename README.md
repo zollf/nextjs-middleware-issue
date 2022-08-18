@@ -4,7 +4,7 @@ Seems to be a issue with multiple builds, not cleaning cache directory and using
 
 ## Steps to reproduce
 
-Delete `src/.next` if exists
+Delete `.next` if exists
 
 Run:
 ```

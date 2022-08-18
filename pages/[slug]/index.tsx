@@ -1,7 +1,11 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 
-export default function Slug({ staticDate, appVersion }) {
+interface Props {
+  staticDate: string
+}
+
+export default function Slug({ staticDate }: Props) {
   const router = useRouter();
   return (
     <div>

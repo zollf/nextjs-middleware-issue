@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev src",
-    "build": "next build src",
-    "start": "next start src",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "lint": "next lint",
     "info": "next info"
   },
@@ -21,8 +21,13 @@
   },
   "homepage": "https://github.com/zollf/nextjs-buildid-cache#readme",
   "dependencies": {
-    "next": "^12.2.6-canary.1",
+    "next": "canary",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/react": "^18.0.14",
+    "typescript": "^4.7.4"
   }
 }
