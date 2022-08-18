@@ -5,20 +5,6 @@ const nextConfig = {
   },
   cleanDistDir: false,
   generateBuildId: () => process.env.APP_VERSION,
-  i18n: {
-    locales: ['aus', 'nz'],
-    defaultLocale: 'aus',
-    domains: [
-      {
-        domain: 'localhost',
-        defaultLocale: 'aus',
-      },
-      {
-        domain: 'nz.localhost',
-        defaultLocale: 'nz',
-      },
-    ],
-  },
 }
 
 module.exports = nextConfig;
