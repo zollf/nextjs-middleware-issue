@@ -1,6 +1,6 @@
 # nextjs-middleware-issue
 
-Seems to be a issue with build ids and using middleware upon revalidation of stale data.
+Seems to be a issue with multiple builds, not cleaning cache directory and using middleware.
 
 ## Steps to reproduce
 
