@@ -1,4 +1,4 @@
-# nextjs-buildid-cache
+# nextjs-middleware-issue
 
 Seems to be a issue with build ids and using middleware upon revalidation of stale data.
 
